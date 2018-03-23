@@ -83,8 +83,9 @@ By the time you submit this project, you will have leveled-up in many big themes
 
 ###### How should I begin approaching this?
 
-* Create a **NEW GitHub repository** 
-* You'll need an `index.html`, `style.css`, and `app.js`. Make sure your stylesheet and JavaScript files are linked in `index.html`.
+* FORK this **GitHub repository** 
+* CLONE from **YOUR** fork
+* You'll need to add an `index.html`, `style.css`, and `app.js`. Make sure your stylesheet and JavaScript files are linked in `index.html`.
 
 ---
 
