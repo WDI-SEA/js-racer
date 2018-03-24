@@ -1,0 +1,32 @@
+body {
+	background-color: black;
+}
+h1 {
+	color: white;
+	text-align: center;
+}
+h2 {
+	color: white;
+	text-align: center;
+}
+#car-one {
+	background: red;
+	padding: 10px;
+	margin: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 200px;
+	/*float: left;*/
+
+}
+#car-two {
+	background: blue;
+	padding: 10px;
+	margin: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 300px;
+
+}
