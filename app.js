@@ -6,52 +6,49 @@ window.onload = function() {
   var buttonStart = document.getElementById("button-start");
   var buttonStop = document.getElementById("button-stop");
   var buttonReset = document.getElementById("button-reset");
-  var cart1 = document.querySelector('#cart1') 
+  var cart1 = document.querySelector("#cart1");
   var Interval;
   let cart1Left = 0;
   let cart2Left = 0;
 
-//  Trying to find the max width of page to end race
-//   const getWidth = () => {
-//     return Math.max(
-//       document.body.scrollWidth,
-//       document.documentElement.scrollWidth,
-//       document.body.offsetWidth,
-//       document.documentElement.offsetWidth,
-//       document.documentElement.clientWidth
-//     );
-//    }
+  //  Trying to find the max width of page to end race
+  //   const getWidth = () => {
+  //     return Math.max(
+  //       document.body.scrollWidth,
+  //       document.documentElement.scrollWidth,
+  //       document.body.offsetWidth,
+  //       document.documentElement.offsetWidth,
+  //       document.documentElement.clientWidth
+  //     );
+  //    }
 
-  cart1.onclick = function(e) {
-      if (cart1Left === getWidth) {
-          console.log('done')
-      } else {
-        cart1Left += 10;
-        cart1.style.left = cart1Left + 'px';
-  }
-}
-
-  cart2.onclick = function(e) {
-    cart2Left += 100;
-    cart2.style.left = cart2Left + 'px';
-}
+  const moveCart = e => {
+    if (e.keyCode === 65 || e.keyCode === 71) {
+      cart1Left += 25;
+      cart1.style.left = cart1Left + "px";
+    } else if ( e.keyCode === 39 || e.keyCode === 37 ) {
+      cart2Left += 25;
+    cart2.style.left = cart2Left + "px";
+    }
+  };
+  document.addEventListener("keyup", moveCart);
 
   buttonStart.onclick = function() {
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
   };
+// Want to implement stop and reset wen cart wins
+  //   buttonStop.onclick = function() {
+  //     clearInterval(Interval);
+  //   };
 
-//   buttonStop.onclick = function() {
-//     clearInterval(Interval);
-//   };
-
-//   buttonReset.onclick = function() {
-//     clearInterval(Interval);
-//     tens = "00";
-//     seconds = "00";
-//     appendTens.innerHTML = tens;
-//     appendSeconds.innerHTML = seconds;
-//   };
+  //   buttonReset.onclick = function() {
+  //     clearInterval(Interval);
+  //     tens = "00";
+  //     seconds = "00";
+  //     appendTens.innerHTML = tens;
+  //     appendSeconds.innerHTML = seconds;
+  //   };
 
   function startTimer() {
     tens++;
