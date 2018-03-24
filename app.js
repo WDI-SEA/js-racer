@@ -1,16 +1,3 @@
-var btn = document.querySelector("#btn");
-const cart1 = document.querySelector("#cart1");
-
-// console.log(btn)
-
-// function handleClick()  {
-//     console.log('clicked')
-// }
-
-// btn.addEventListener('click', handleClick)
-
-console.log(cart1);
-
 window.onload = function() {
   var seconds = 00;
   var tens = 00;
@@ -19,24 +6,52 @@ window.onload = function() {
   var buttonStart = document.getElementById("button-start");
   var buttonStop = document.getElementById("button-stop");
   var buttonReset = document.getElementById("button-reset");
+  var cart1 = document.querySelector('#cart1') 
   var Interval;
+  let cart1Left = 0;
+  let cart2Left = 0;
+
+//  Trying to find the max width of page to end race
+//   const getWidth = () => {
+//     return Math.max(
+//       document.body.scrollWidth,
+//       document.documentElement.scrollWidth,
+//       document.body.offsetWidth,
+//       document.documentElement.offsetWidth,
+//       document.documentElement.clientWidth
+//     );
+//    }
+
+  cart1.onclick = function(e) {
+      if (cart1Left === getWidth) {
+          console.log('done')
+      } else {
+        cart1Left += 10;
+        cart1.style.left = cart1Left + 'px';
+  }
+}
+
+  cart2.onclick = function(e) {
+    cart2Left += 100;
+    cart2.style.left = cart2Left + 'px';
+}
 
   buttonStart.onclick = function() {
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
   };
 
-  buttonStop.onclick = function() {
-    clearInterval(Interval);
-  };
+//   buttonStop.onclick = function() {
+//     clearInterval(Interval);
+//   };
 
-  buttonReset.onclick = function() {
-    clearInterval(Interval);
-    tens = "00";
-    seconds = "00";
-    appendTens.innerHTML = tens;
-    appendSeconds.innerHTML = seconds;
-  };
+//   buttonReset.onclick = function() {
+//     clearInterval(Interval);
+//     tens = "00";
+//     seconds = "00";
+//     appendTens.innerHTML = tens;
+//     appendSeconds.innerHTML = seconds;
+//   };
 
   function startTimer() {
     tens++;

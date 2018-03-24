@@ -9,7 +9,18 @@ i {
   padding: 25px;
 }
 
+#cart1 {
+  position: absolute;
+  left: 0;
+}
+
+#cart2 {
+  position: absolute;
+  left: 0;
+}
+
 .fa-flag-checkered {
+  
   display: flex;
   justify-content: flex-end;
 }
@@ -130,6 +141,7 @@ i {
   margin: 30px auto;
   color: #fff;
   text-align: center;
+  padding: 55px;
 }
 
 .wrapper h1,
