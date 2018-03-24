@@ -1,22 +1,46 @@
-const playerOne = document.getElementById("car-one");
-const playerTwo = document.getElementById("car-two");
+const playerOne = document.getElementById("car-one-top");
+const playerTwo = document.getElementById("car-two-bottom");
 
-var distance = 75;
+var distance1 = 0;
+var distance2 = 0;
 
 
-	document.addEventListener('keydown', (e) => {
-		if(70 === e.keyCode) {
-			distance += 10;
-			playerOne.style.left = distance + 'px';
-		};
-	})
+document.addEventListener('keydown', (e) => {
+	if(70 === e.keyCode && distance < 1100) {
+		distance += 100;
+		playerOne.style.left = distance + 'px';
+	}
+	else {
+		alert('Player One is the WINNER!');
+	}
+});
 
-	document.addEventListener('keydown', (e) => {
-		if(74 === e.keyCode) {
-			distance += 10;
-			playerTwo.style.left = distance + 'px';
-		};
-	})
+document.addEventListener('keydown', (e) => {
+	if(74 === e.keyCode && distance2 < 1100) {
+		distance2 += 100;
+		playerTwo.style.left = distance2 + 'px';
+	}
+	else {
+		alert('Player Two is the WINNER!');
+	}
+});
+
+// document.addEventListener('keydown', (e) => {
+// 	if(70 === e.keyCode && distance < 1200) {
+// 		distance += 100;
+// 		playerOne.style.left = distance + 'px';
+// 	}
+// 	else if (distance >= 1100) {
+// 		alert('Player One is the WINNER!');
+// 	}
+// });
+
+	// document.addEventListener('keydown', (e) => {
+	// 	if(74 === e.keyCode) {
+	// 		distance += 10;
+	// 		playerTwo.style.left = distance + 'px';
+	// 	};
+	// })
 
 
 

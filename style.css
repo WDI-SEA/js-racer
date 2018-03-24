@@ -9,24 +9,30 @@ h2 {
 	color: white;
 	text-align: center;
 }
-#car-one {
+#car-one-top {
 	background: red;
-	padding: 10px;
-	margin: 20px;
-	display: inline-block;
+	height: 30px;
+	width: 100px;
 	position: absolute;
-	left: 75px;
-	top: 200px;
-	/*float: left;*/
+	left: 0px;
+	top: 210px;
 
 }
-#car-two {
+#car-two-bottom {
 	background: blue;
-	padding: 10px;
-	margin: 20px;
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: 310px;
+
+}
+#finish-line {
+	background: white;
+	border-right: 6px solid white;
+	height: 300px;	
 	display: inline-block;
 	position: absolute;
-	left: 75px;
-	top: 300px;
-
+	left: 1200px;
+	top: 140px;
 }
