@@ -1,34 +1,172 @@
 body {
-    /* margin: 0; */
-    
+  background: #ffa600;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
 }
 i {
-    display: block;
-    padding: 25px;
+  display: block;
+  padding: 25px;
+}
+
+.fa-flag-checkered {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*I just made this background and wanted to save it here*/
 
-  /* button {
-    outline: none;
-    font-family: 'helvetica neue' sans-serif;
-    font-size: 2em;
-    color: white;
-    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.7), 1px 1px 1px rgba(255, 255, 255, 0.3);
-    display: block;
-    margin: 2em auto;
-    padding: 23px 37px 25px 35px;
-    cursor: pointer;
-    background-color: #2e050c;
-    background-image: linear-gradient(273deg, #eb4763 30%, #e61a3c 40%);
-    border: none;
-    border-radius: 16px;
-    box-shadow: inset 0px 0px 1px 1px rgba(138, 15, 36, 0.9), inset 0px 0px 2px 3px rgba(230, 26, 60, 0.9), inset 1px 1px 1px 4px rgba(255, 255, 255, 0.8), inset 0px 0px 2px 7px rgba(235, 71, 99, 0.8), inset 0px 0px 4px 10px rgba(230, 26, 60, 0.9), 8px 10px 2px 6px rgba(92, 10, 24, 0.55), 0px 0px 3px 2px rgba(184, 20, 48, 0.9), 0px 0px 2px 6px rgba(230, 26, 60, 0.9), -1px -1px 1px 6px rgba(255, 255, 255, 0.9), 0px 0px 2px 11px rgba(230, 26, 60, 0.9), 0px 0px 1px 12px rgba(184, 20, 48, 0.9), 1px 3px 14px 14px rgba(0, 0, 0, 0.4);
+.button {
+  outline: none;
+  font-family: "helvetica neue" sans-serif;
+  font-size: 2em;
+  color: white;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.7),
+    1px 1px 1px rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 2em auto;
+  padding: 23px 37px 25px 35px;
+  cursor: pointer;
+  background-color: #2e050c;
+  background-image: linear-gradient(273deg, #eb4763 30%, #e61a3c 40%);
+  border: none;
+  border-radius: 16px;
+  box-shadow: inset 0px 0px 1px 1px rgba(138, 15, 36, 0.9),
+    inset 0px 0px 2px 3px rgba(230, 26, 60, 0.9),
+    inset 1px 1px 1px 4px rgba(255, 255, 255, 0.8),
+    inset 0px 0px 2px 7px rgba(235, 71, 99, 0.8),
+    inset 0px 0px 4px 10px rgba(230, 26, 60, 0.9),
+    8px 10px 2px 6px rgba(92, 10, 24, 0.55),
+    0px 0px 3px 2px rgba(184, 20, 48, 0.9),
+    0px 0px 2px 6px rgba(230, 26, 60, 0.9),
+    -1px -1px 1px 6px rgba(255, 255, 255, 0.9),
+    0px 0px 2px 11px rgba(230, 26, 60, 0.9),
+    0px 0px 1px 12px rgba(184, 20, 48, 0.9),
+    1px 3px 14px 14px rgba(0, 0, 0, 0.4);
+}
+
+.button:active {
+  color: #d9d9d9;
+  padding: 26px 34px 22px 38px;
+  background-image: linear-gradient(273deg, #e61a3c 50%, #e8304f 60%);
+  box-shadow: inset 3px 4px 3px 2px rgba(92, 10, 24, 0.55),
+    inset 0px 0px 1px 1px rgba(138, 15, 36, 0.9),
+    inset -1px -1px 2px 3px rgba(230, 26, 60, 0.9),
+    inset -2px -2px 1px 3px rgba(255, 255, 255, 0.8),
+    inset 0px 0px 2px 7px rgba(235, 71, 99, 0.8),
+    inset 0px 0px 3px 10px rgba(230, 26, 60, 0.9),
+    0px 0px 3px 2px rgba(184, 20, 48, 0.9),
+    0px 0px 2px 6px rgba(230, 26, 60, 0.9),
+    -1px -1px 1px 6px rgba(255, 255, 255, 0.9),
+    0px 0px 2px 11px rgba(230, 26, 60, 0.9),
+    0px 0px 1px 12px rgba(184, 20, 48, 0.9),
+    1px 3px 14px 14px rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+  display: none;
+}
+
+/* .stopwatch-container {
+    margin: 0;
+    padding: 0;
   }
   
-  button:active {
-    color: #d9d9d9;
-    padding: 26px 34px 22px 38px;
-    background-image: linear-gradient(273deg, #e61a3c 50%, #e8304f 60%);
-    box-shadow: inset 3px 4px 3px 2px rgba(92, 10, 24, 0.55), inset 0px 0px 1px 1px rgba(138, 15, 36, 0.9), inset -1px -1px 2px 3px rgba(230, 26, 60, 0.9), inset -2px -2px 1px 3px rgba(255, 255, 255, 0.8), inset 0px 0px 2px 7px rgba(235, 71, 99, 0.8), inset 0px 0px 3px 10px rgba(230, 26, 60, 0.9), 0px 0px 3px 2px rgba(184, 20, 48, 0.9), 0px 0px 2px 6px rgba(230, 26, 60, 0.9), -1px -1px 1px 6px rgba(255, 255, 255, 0.9), 0px 0px 2px 11px rgba(230, 26, 60, 0.9), 0px 0px 1px 12px rgba(184, 20, 48, 0.9), 1px 3px 14px 14px rgba(0, 0, 0, 0.4);
+  .controls {
+    position: fixed;
+    text-align: center;
+    top: 1em;
+    width: 100%;
+  }
+  
+  .button {
+    color: #bbb;
+    font-size: 4vw;
+    margin: 0 0.5em;
+    text-decoration: none;
+  }
+  
+  .button:first-child {
+      margin-left: 0;
+  }
+  
+  .button:last-child {
+      margin-right: 0;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+
+  
+  .stopwatch {
+    font-size: 20vw;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+  }
+  
+  .results {
+    border-color: lime;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   } */
+
+/* Variabes */
+/* Mixin's */
+/* body {
+  background: #ffa600;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+} */
+
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+  color: #fff;
+  text-align: center;
+}
+
+.wrapper h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds,
+#tens {
+  font-size: 2em;
+}
+
+.stopwatch {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #ffa600;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+.stopwatch:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #ffa600;
+}

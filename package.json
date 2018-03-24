@@ -1,0 +1,23 @@
+{
+  "name": "js-racer-1",
+  "version": "1.0.0",
+  "description": "Your first interactive front end creation.",
+  "main": "app.js",
+  "dependencies": {
+    "easytimer.js": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegreatsantini/js-racer-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegreatsantini/js-racer-1/issues"
+  },
+  "homepage": "https://github.com/thegreatsantini/js-racer-1#readme"
+}
