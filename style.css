@@ -2,11 +2,21 @@ body {
 	background-color: black;
 }
 h1 {
+	font-family: 'Faster One', cursive;
+	font-size: 100px;
+	margin: 0 auto;
 	color: white;
 	text-align: center;
 }
 h2 {
 	color: white;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	margin: 0 auto;
+}
+p {
+	color: white;
+	font-family: 'Permanent Marker', cursive;
 	text-align: center;
 }
 #car-one-top {
@@ -15,7 +25,7 @@ h2 {
 	width: 100px;
 	position: absolute;
 	left: 0px;
-	top: 210px;
+	top: 310px;
 
 }
 #car-two-bottom {
@@ -24,7 +34,7 @@ h2 {
 	width: 100px;
 	position: absolute;
 	left: 0px;
-	top: 310px;
+	top: 410px;
 
 }
 #finish-line {
@@ -34,5 +44,16 @@ h2 {
 	display: inline-block;
 	position: absolute;
 	left: 1200px;
-	top: 140px;
+	top: 240px;
 }
+#f {
+	color: red;
+}
+#u {
+	color: blue;
+}
+
+
+
+
+

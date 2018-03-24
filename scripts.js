@@ -6,21 +6,21 @@ var distance2 = 0;
 
 
 document.addEventListener('keydown', (e) => {
-	if(70 === e.keyCode && distance < 1100) {
-		distance += 100;
-		playerOne.style.left = distance + 'px';
+	if(70 === e.keyCode && distance1 < 1100) {
+		distance1 += 100;
+		playerOne.style.left = distance1 + 'px';
 	}
-	else {
+	else if (distance1 === 1100) {
 		alert('Player One is the WINNER!');
 	}
 });
 
 document.addEventListener('keydown', (e) => {
-	if(74 === e.keyCode && distance2 < 1100) {
+	if(85 === e.keyCode && distance2 < 1100) {
 		distance2 += 100;
 		playerTwo.style.left = distance2 + 'px';
 	}
-	else {
+	else if (distance2 ===1100) {
 		alert('Player Two is the WINNER!');
 	}
 });
