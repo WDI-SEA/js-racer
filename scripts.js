@@ -1,5 +1,5 @@
-const playerOne = document.getElementById("car-one-top");
-const playerTwo = document.getElementById("car-two-bottom");
+const playerOne = document.getElementById("car-one");
+const playerTwo = document.getElementById("car-two");
 
 var distance1 = 0;
 var distance2 = 0;
@@ -11,7 +11,7 @@ document.addEventListener('keydown', (e) => {
 		playerOne.style.left = distance1 + 'px';
 	}
 	else if (distance1 === 1100) {
-		alert('Player One is the WINNER!');
+		alert('Green car is the WINNER!');
 	}
 });
 
@@ -21,7 +21,7 @@ document.addEventListener('keydown', (e) => {
 		playerTwo.style.left = distance2 + 'px';
 	}
 	else if (distance2 ===1100) {
-		alert('Player Two is the WINNER!');
+		alert('Blue car is the WINNER!');
 	}
 });
 

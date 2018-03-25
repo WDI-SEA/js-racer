@@ -19,38 +19,41 @@ p {
 	font-family: 'Permanent Marker', cursive;
 	text-align: center;
 }
-#car-one-top {
-	background: red;
-	height: 30px;
+#car-one {
+	height: 100px;
 	width: 100px;
 	position: absolute;
 	left: 0px;
-	top: 310px;
+	top: 330px;
 
 }
-#car-two-bottom {
-	background: blue;
-	height: 30px;
+#car-two {
+	height: 100px;
 	width: 100px;
 	position: absolute;
 	left: 0px;
-	top: 410px;
+	top: 470px;
 
 }
 #finish-line {
-	background: white;
-	border-right: 6px solid white;
+	border-right: 6px solid red;
 	height: 300px;	
 	display: inline-block;
 	position: absolute;
 	left: 1200px;
-	top: 240px;
+	top: 300px;
 }
 #f {
-	color: red;
+	color: green;
+	font-size: 30px;
 }
 #u {
 	color: blue;
+	font-size: 30px;
+}
+#road {
+	width: 100%;
+	height: 50%;
 }
 
 
