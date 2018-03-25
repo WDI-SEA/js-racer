@@ -7,37 +7,67 @@ window.onload = function() {
   var buttonStop = document.getElementById("button-stop");
   var buttonReset = document.getElementById("button-reset");
   var cart1 = document.querySelector("#cart1");
+  const easyButton = document.querySelector("#easy");
+  const mediumButton = document.querySelector("#medium");
+  const hardButton = document.querySelector("#hard");
   var Interval;
   let cart1Left = 0;
   let cart2Left = 0;
 
-  //  Trying to find the max width of page to end race
-  //   const getWidth = () => {
-  //     return Math.max(
-  //       document.body.scrollWidth,
-  //       document.documentElement.scrollWidth,
-  //       document.body.offsetWidth,
-  //       document.documentElement.offsetWidth,
-  //       document.documentElement.clientWidth
-  //     );
-  //    }
+  //  check for cart reached the screen
+  // const didWin = () => {
+  //   if (player.getx() > 1024) {
+  //     player.setx(1024);
+  //   } else if (player.getx() < 0) {
+  //     player.setx(0);
+  //   }
+  // };
 
   const moveCart = e => {
     if (e.keyCode === 65 || e.keyCode === 71) {
       cart1Left += 25;
       cart1.style.left = cart1Left + "px";
-    } else if ( e.keyCode === 39 || e.keyCode === 37 ) {
+    } else if (e.keyCode === 39 || e.keyCode === 37) {
       cart2Left += 25;
-    cart2.style.left = cart2Left + "px";
+      cart2.style.left = cart2Left + "px";
     }
   };
   document.addEventListener("keyup", moveCart);
+
+  const moveRoboCart = () => {
+    cart2Left += 25;
+    cart2.style.left = cart2Left + "px";
+  };
+
+  const roboCartDifficulty = difficulty => {
+    clearInterval(Interval);
+    Interval = setInterval(startTimer, 10);
+    if (difficulty === "easy") {
+      setInterval(moveRoboCart, 500);
+    } else if (difficulty === "medium") {
+      setInterval(moveRoboCart, 300);
+    } else if (difficulty === "hard") {
+      setInterval(moveRoboCart, 90);
+    }
+  };
+
+  easyButton.addEventListener("click", () => {
+    roboCartDifficulty("easy");
+  });
+
+  mediumButton.addEventListener("click", () => {
+    roboCartDifficulty("medium");
+  });
+
+  hardButton.addEventListener("click", () => {
+    roboCartDifficulty("hard");
+  });
 
   buttonStart.onclick = function() {
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
   };
-// Want to implement stop and reset wen cart wins
+  // Want to implement stop and reset wen cart wins
   //   buttonStop.onclick = function() {
   //     clearInterval(Interval);
   //   };
@@ -74,3 +104,14 @@ window.onload = function() {
     }
   }
 };
+
+//  Trying to find the max width of page to end race
+//   const getWidth = () => {
+//     return Math.max(
+//       document.body.scrollWidth,
+//       document.documentElement.scrollWidth,
+//       document.body.offsetWidth,
+//       document.documentElement.offsetWidth,
+//       document.documentElement.clientWidth
+//     );
+//    }
