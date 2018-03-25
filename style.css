@@ -1,4 +1,15 @@
 
+div {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Chicle', cursive;
+    float: right;
+    font-size: 50px;
+    margin-right: -50px;
+}
+
 body {
 	background: -webkit-radial-gradient(center, ellipse cover, #5b42d6 16%,#5b42d6 16%,#b7aade 25%,#5c4cf0 30%,#5a3ac2 40%,#5a3ac2 40%,#7761c7 53%,#513ac2 84%,#45268c 100%);
 	max-width: 800px; 
@@ -15,7 +26,7 @@ body {
 	position: relative;
 	float: left;
 	top: 70px;
-	left: 30px;
+	left: 15px;
 	word-wrap: break-word;
 	overflow: auto;
 
@@ -29,7 +40,7 @@ body {
 	position: relative;
 	top: 200px;
 	float: left;
-	left: -25px;
+	left: 10px;
 
 	
 }
@@ -43,20 +54,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	width: 40px;
 	float: right;
 	text-align: right;	
-	margin-right: -600px;
+	margin-right: -900px;
+	margin-bottom: 400px;
 }
 
-button {
-	background: black;
-	font-color: white;
-	border: 3px solid white;
-	position: relative;
-	right: -550px;
-	bottom: -600px;
-}
+
 a {
 	position: relative;
 	text-align: center;
+	right: 50px;
+	bottom: -650px;
+	color: white;
+	font-family: 'Chicle', cursive;
+
+}
+iframe {
+	height: 100px;
+	width: 200px;
+	position: relative;
+	float: right;
+	bottom: -580px;
+	right: -800px;
+
+}
+
+
 
 }
 }
