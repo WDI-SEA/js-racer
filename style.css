@@ -2,15 +2,32 @@ body {
 	background-color: black;
 	color: white;
 	margin: 20px;
+	font-family: 'Kelly Slab', cursive;
 }
 div {
 /*	background-color: black;
 */	display: block;
 }
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 50px;
+	color: #559955;
+}
+h1:hover {
+	cursor: default;
+}
 .gameBoard{
-	background-color: white;
+	/*background-color: white;*/
 	padding: 100px;
+	margin: 0 100px;
 	border-radius: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+48,000000+49,000000+51,ffffff+52,ffffff+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 48%, #000000 49%, #000000 51%, #ffffff 52%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .cars {
 	float: left;
@@ -20,15 +37,18 @@ div {
 #car1 {
 	background-color: red;
 	position: absolute;
-	top: 70px;
-	left: 20px;
+	top: 180px;
+	left: 120px;
 }
 #car2 {
 	background-color: blue;
 	position: relative;
-	top: 130px;
+	top: 140px;
+	left: 100px;
 }
 #finishLine {
+	position: relative;
+	right: 100px;
 	float: right;
 	padding: 100px 5px;
 	border-radius: 3px;
@@ -38,4 +58,48 @@ div {
 	background: -webkit-linear-gradient(top, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.score {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.score:hover {
+	cursor: default;
+}
+.scoreboard {
+	margin: 50px;
+	padding: 20px 0;
+	text-align: center;
+}
+.clearedFloat:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.redPlayer {
+	color: maroon;
+}
+.bluePlayer {
+	color: navy;
+}
+.menuButtons {
+	padding: 20px;
+	background-color: white;
+	color: black;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.menuButtons:hover {
+	background-color: #77bb77;
+	cursor: pointer;
 }

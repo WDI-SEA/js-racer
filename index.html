@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>JS-Racer</title>
 </head>
 <body>
-	
+	<h1>JS RACER</h1>
 	<div class= "cars" id="car1"></div>
 	<div class= "cars" id="car2"></div>
 	<div id="finishLine"></div>
-	<div class="gameBoard">
+	<div class="gameBoard"></div>
+	<div class="scoreboard">
+		<div class="clearedFloat">
+			<div class="score redPlayer">RED</div>
+			<div class="score bluePlayer">BLUE</div>
+		</div>
+		<div class="clearedFloat">
+			<div class="score redPlayer" id="scoreRed">0</div>
+			<div class="score bluePlayer" id="scoreBlue">0</div>
+		</div>
 	</div>
+	<div class="menuButtons" id="restartButton">RESTART</div>
 	<script type="text/javascript" src="code.js"></script>
 </body>
 </html>
