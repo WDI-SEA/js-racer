@@ -1,0 +1,169 @@
+body {
+  background: #f7df1e;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+}
+i {
+  display: block;
+  padding: 25px;
+}
+
+#cart1 {
+  position: absolute;
+  left: 0;
+}
+
+#cart2 {
+  position: absolute;
+  left: 0;
+}
+
+.fa-flag-checkered {
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hide {
+  display: none;
+}
+
+/* .stopwatch-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .controls {
+    position: fixed;
+    text-align: center;
+    top: 1em;
+    width: 100%;
+  }
+  
+  .button {
+    color: #bbb;
+    font-size: 4vw;
+    margin: 0 0.5em;
+    text-decoration: none;
+  }
+  
+  .button:first-child {
+      margin-left: 0;
+  }
+  
+  .button:last-child {
+      margin-right: 0;
+  }
+  
+  .button:hover {
+    color: white;
+  }
+
+  
+  .stopwatch {
+    font-size: 20vw;
+    height: 100%;
+    line-height: 100vh;
+    text-align: center;
+  }
+  
+  .results {
+    border-color: lime;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+/* Variabes */
+/* Mixin's */
+/* body {
+  background: #ffa600;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+} */
+
+.wrapper {
+  width: 800px;
+  margin: 30px auto;
+  color: #fff;
+  text-align: center;
+  padding: 55px;
+}
+
+.wrapper h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds,
+#tens {
+  font-size: 2em;
+}
+
+.stopwatch {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: black;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+.stopwatch:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #ffa600;
+}
+
+.key {
+  background: #232323;
+  color: #f0f0f0;
+  text-align: center;
+  height: calc(var(--width)/16);
+  flex: 1 1 calc(var(--width)/16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: .15rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,.26), inset 0 -3px 0 rgba(255,255,255,.12);
+  transition: .2s ease-in-out;
+}
+
+/*  Flexbox for instructions with keyboard icons
+ .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.instructions {
+  display: inline;
+} */
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  letter-spacing: 1.5px;
+  border-bottom-right-radius: 0;
+}

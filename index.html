@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Racer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class=" jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">JS Racer</h1>
+            <p class="lead">Challenge your friends to see who is fastest</p>
+            <hr class="my-4">
+            <p class="lead">Or test your skills by selecting a difficulty at the bottom</p>
+            <div>
+                <p>Player 1 press
+                    <i class="fab fa-amilia"></i>
+                    and
+                    <i class="fab fa-goodreads-g"></i>
+                    Player 2 press
+                    <i class="fas fa-caret-square-left"></i>
+                    and
+                    <i class="fas fa-caret-square-right"></i>
+                    to move your carts
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <i id='cart1' class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+    </div>
+    <div>
+        <i class="fas fa-flag-checkered fa-2x"></i>
+    </div>
+    <div>
+        <i id="cart2" class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+    </div>
+    <div class="wrapper">
+        <p class="timer">
+            <span id="seconds">00</span>:
+            <span id="tens">00</span>
+        </p>
+        <div class="btn-group dropright">
+            <button class=" btn btn-secondary dropdown-toggle btn-lg" id="button-start" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select your difficulty</button>
+            <button type="button" id="easy" class="btn btn-success btn-lg">Easy</button>
+            <button type="button" id="medium" class="btn btn-primary btn-lg">Medium</button>
+            <button type="button" id="hard" class="btn btn-danger btn-lg">Extreme</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Challenge a friend</button>
+                    <button class="dropdown-item" type="button">Challenge a robot</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
