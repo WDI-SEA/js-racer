@@ -6,7 +6,7 @@ const resetBtn = document.getElementById("resetButton");
 const scoreRed =  document.getElementById("scoreRed");
 const scoreBlue = document.getElementById("scoreBlue");
 const feedbackField = document.getElementById("disFeed");
-let playing = true;
+let playing = false;
 let redPos = 120;
 let bluePos = 100;
 
@@ -75,12 +75,16 @@ const updateScore = (car) => {
 }
 
 const restartGame = () => {
-	feedbackField.innerHTML = "Go!";
+	playing = false;
 	carRed.style.left = redPos + "px";
 	carBlue.style.left = bluePos + "px";
 	getRollingRed(redPos);
 	getRollingBlue(bluePos);
-	playing = true;
+	for(let i = 1; i <= 3; i++) { setTimeout(() => {feedbackField.innerHTML = `${i}...`}, i*1000) }
+	setTimeout(() =>  {
+		feedbackField.innerHTML = "Go!";
+		playing = true;
+	}, 4000);
 }
 
 const resetGame = () => {

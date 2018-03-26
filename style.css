@@ -18,7 +18,7 @@ h1:hover {
 }
 .gameBoard{
 	background-color: rgba(0,0,0,0.8);
-	padding: 100px;
+	padding: 45px;
 	margin: 0 100px 20px 100px;
 	border-radius: 10px;
 
@@ -36,13 +36,13 @@ h1:hover {
 #car1 {
 	background-color: red;
 	position: absolute;
-	top: 295px;
+	top: 290px;
 	left: 120px;
 }
 #car2 {
 	background-color: blue;
 	position: relative;
-	top: 140px;
+	top: 145px;
 	left: 100px;
 }
 #finishLine {
