@@ -1,0 +1,93 @@
+
+.title {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Chicle', cursive;
+    float: right;
+    font-size: 50px;
+    margin-right: -50px;
+}
+.subtitle {
+	color: black;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Chicle', cursive;
+    float: right;
+    font-size: 10px;
+    margin-right: 50px;
+}
+
+body {
+	background: -webkit-radial-gradient(center, ellipse cover, #5b42d6 16%,#5b42d6 16%,#b7aade 25%,#5c4cf0 30%,#5a3ac2 40%,#5a3ac2 40%,#7761c7 53%,#513ac2 84%,#45268c 100%);
+	max-width: 800px; 
+
+
+}
+
+.car1 {
+	background: black;
+	height: 30px;
+	width: 30px;
+	border: 2px solid white;
+	padding: 10px;
+	position: relative;
+	float: left;
+	top: 70px;
+	left: 15px;
+	word-wrap: break-word;
+	overflow: auto;
+
+}
+.car2 { 
+	background: white;
+	height: 30px;
+	width: 30px;
+	border: 2px solid black;
+	padding: 10px;
+	position: relative;
+	top: 200px;
+	float: left;
+	left: -40px;
+
+	
+}
+.finish {
+	
+background: -moz-linear-gradient(top, #000000 0%, #000000 11%, #ffffff 12%, #ffffff 25%, #000000 26%, #000000 37%, #ffffff 38%, #ffffff 50%, #000000 51%, #111111 62%, #ffffff 63%, #ffffff 75%, #000000 76%, #000000 87%, #ffffff 88%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	height: 400px;
+	width: 40px;
+	float: right;
+	text-align: right;	
+	margin-right: -900px;
+	margin-bottom: 400px;
+}
+
+
+a {
+	position: relative;
+	text-align: center;
+	right: 50px;
+	bottom: -650px;
+	color: white;
+	font-family: 'Chicle', cursive;
+
+}
+iframe {
+	height: 100px;
+	width: 200px;
+	position: relative;
+	float: right;
+	bottom: -580px;
+	right: -800px;
+
+}
+
+
+
+}
+}
