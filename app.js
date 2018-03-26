@@ -39,28 +39,25 @@ window.onload = function() {
     cart2.style.left = cart2Left + "px";
   };
 
-  const roboCartDifficulty = difficulty => {
+  const roboCartDifficulty = speed => {
+    // stop watch reset and start
     clearInterval(Interval);
     Interval = setInterval(startTimer, 10);
-    if (difficulty === "easy") {
-      setInterval(moveRoboCart, 500);
-    } else if (difficulty === "medium") {
-      setInterval(moveRoboCart, 300);
-    } else if (difficulty === "hard") {
-      setInterval(moveRoboCart, 90);
-    }
+    // move roboCart
+    setInterval(moveRoboCart, speed)
+    
   };
 
   easyButton.addEventListener("click", () => {
-    roboCartDifficulty("easy");
+    roboCartDifficulty(500);
   });
 
   mediumButton.addEventListener("click", () => {
-    roboCartDifficulty("medium");
+    roboCartDifficulty(300);
   });
 
   hardButton.addEventListener("click", () => {
-    roboCartDifficulty("hard");
+    roboCartDifficulty(90);
   });
 
   buttonStart.onclick = function() {
