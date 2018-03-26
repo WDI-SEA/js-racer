@@ -1,33 +1,32 @@
 body {
+	background-image: url(mountains.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: black;
 	color: white;
 	margin: 20px;
 	font-family: 'Kelly Slab', cursive;
 }
-div {
-/*	background-color: black;
-*/	display: block;
-}
 h1 {
 	text-align: center;
-	margin-bottom: 50px;
-	font-size: 50px;
-	color: #559955;
+	margin-bottom: 20px;
+	font-size: 70px;
+	color: #a4eaea;
 }
 h1:hover {
 	cursor: default;
 }
 .gameBoard{
-	/*background-color: white;*/
+	background-color: rgba(0,0,0,0.8);
 	padding: 100px;
-	margin: 0 100px;
+	margin: 0 100px 20px 100px;
 	border-radius: 10px;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+48,000000+49,000000+51,ffffff+52,ffffff+100 */
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 48%, #000000 49%, #000000 51%, #ffffff 52%, #ffffff 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+/*	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 48%, #000000 49%, #000000 51%, #ffffff 52%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); 
+	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );*/
 }
 .cars {
 	float: left;
@@ -37,7 +36,7 @@ h1:hover {
 #car1 {
 	background-color: red;
 	position: absolute;
-	top: 180px;
+	top: 295px;
 	left: 120px;
 }
 #car2 {
@@ -64,20 +63,19 @@ h1:hover {
 	background-color: white;
 	color: black;
 	width: 100px;
-	height: 50px;
-	line-height: 50px;
+	height: 30px;
+	line-height: 30px;
 	text-align: center;
 	margin: 0 auto;
-	border: 2px solid black;
-	border-radius: 5px;
+	border-radius: 2px;
 	font-size: 20px;
 }
 .score:hover {
 	cursor: default;
 }
-.scoreboard {
-	margin: 50px;
-	padding: 20px 0;
+.centeredSection {
+	/*margin: 50px;*/
+	padding: 10px 0;
 	text-align: center;
 }
 .clearedFloat:after {
@@ -100,6 +98,20 @@ h1:hover {
 	border-radius: 5px;
 }
 .menuButtons:hover {
-	background-color: #77bb77;
+	background-color: #7799ff;
+	color: white;
 	cursor: pointer;
+}
+.displayFeed {
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	background-color: rgba(0,0,0,0.8);
+	display: inline-block;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.displayFeed:hover {
+	cursor: default;
 }

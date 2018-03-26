@@ -2,17 +2,20 @@ const carRed = document.getElementById("car1");
 const carBlue = document.getElementById("car2");
 const finish = document.getElementById("finishLine");
 const restartBtn = document.getElementById("restartButton");
+const resetBtn = document.getElementById("resetButton");
+const scoreRed =  document.getElementById("scoreRed");
+const scoreBlue = document.getElementById("scoreBlue");
+const feedbackField = document.getElementById("disFeed");
 let playing = true;
 let redPos = 120;
 let bluePos = 100;
-let scoreRed =  document.getElementById("scoreRed");
-let scoreBlue = document.getElementById("scoreBlue");
+
 
 const getRollingRed = (redPos) => {
 	const car = "Red";
 	document.onkeyup = (event) => {
 		if(playing){
-			if(event.keyCode === 37){
+			if(event.keyCode === 68 || event.keyCode === 37){
 				redPos += 20;
 				carRed.style.left = redPos + "px";
 				//console.log(moveCar, car);
@@ -26,7 +29,7 @@ const getRollingBlue = (bluePos) => {
 	const car = "Blue";
 	window.onkeyup = (event) => {
 		if(playing){
-			if(event.keyCode === 39){
+			if(event.keyCode === 76 || event.keyCode === 39){
 				bluePos += 20;
 				carBlue.style.left = bluePos + "px";
 				//console.log(moveCar, car);
@@ -53,6 +56,8 @@ const checkWin = (carPos, car) => {
 		//alert(`${car} player wins!`);
 		playing = false;
 		updateScore(car);
+		feedbackField.innerHTML = `${car} player wins!`;
+		setTimeout(restartGame, 3000);
 	}
 }
 
@@ -63,18 +68,28 @@ const updateScore = (car) => {
 	} else if (car === "Blue") {
 		let score = Number(scoreBlue.innerHTML)+1;
 		scoreBlue.innerHTML = score;
+	} else if (car === "reset") {
+		scoreBlue.innerHTML = 0;
+		scoreRed.innerHTML = 0;
 	}
 }
 
 const restartGame = () => {
-	carRed.style.left = redPos;
-	carBlue.style.left = bluePos;
+	feedbackField.innerHTML = "Go!";
+	carRed.style.left = redPos + "px";
+	carBlue.style.left = bluePos + "px";
 	getRollingRed(redPos);
 	getRollingBlue(bluePos);
 	playing = true;
 }
 
+const resetGame = () => {
+	updateScore("reset");
+	restartGame();
+}
+
 restartBtn.addEventListener("click", restartGame);
+resetBtn.addEventListener("click", resetGame);
 
 restartGame();
 getRollingRed(redPos);
