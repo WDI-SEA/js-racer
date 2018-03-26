@@ -1,0 +1,38 @@
+
+.lane {
+	background: none;
+	display: block;
+	padding: 10px 0;
+	height: 30px;
+}
+
+#car1 {
+	background: blue;
+	display: inline-block;
+	padding: 0 10px;
+	position: relative;
+	width: 5%;
+	height: 100%;
+	left: ;
+}
+
+#car2 {
+	background: red;
+	display: inline-block;
+	padding: 0 10px;
+	position: relative;
+	width: 5%;
+	height: 100%;
+	left: 0%;
+}
+
+.finishLine {
+	background: purple;
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	top: 0;
+	width: 5%;
+	height: 116px;
+	z-index: -1
+}
