@@ -1,0 +1,47 @@
+body {
+    /* background-color: lightgrey; */
+    /* background-image: src="https://imgur.com/ZxUsgmb"; */
+    /* margin-right: 200px; */
+}
+
+h1 {
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 600;
+}
+h2{
+    text-align: center
+}
+h3{
+    text-align: center
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+}
+
+#carOne {
+    /* background-color: blue; */
+    /* src = href="images/turtle.png"; */
+    position: absolute;
+    left: 150px;
+    top: 550px;
+    margin-bottom: 40px;
+}
+#carTwo {
+    /* background-color: green; */
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    margin-top: 40px;
+}
+.vl {
+    border-right: 6px solid red;
+    height: 400px;
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+    margin: 0px;
+}
