@@ -1,0 +1,59 @@
+#player1 {
+	position: absolute;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	
+
+}
+
+#player2 {
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+
+}
+h1 {
+	background: red;
+	padding: 20px;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+	margin: 20px;
+	width: 300px;
+	text-align: center;
+	top: 50px;
+	left: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 40px;
+
+}
+
+body {
+	background-color: black;
+}
+
+#container1 {
+	height: 90px;
+	outline: 1px solid block;
+	border-color: white;
+	border-style: solid;
+}
+#container2 {
+	height: 90px;
+	outline: 1px solid block;
+	border-color: white;
+	border-style: solid;
+}
+
+
+
