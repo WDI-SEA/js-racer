@@ -15,7 +15,7 @@ function animWhite(e){
         moveCar += 20;
         carWhite.style.left = moveCar + 'px';
         if(moveCar >= 1400){
-        	alert("White Car Wins!");
+            alert("White Car Wins!")
         }
     
     }
