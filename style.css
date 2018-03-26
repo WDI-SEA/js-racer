@@ -1,0 +1,117 @@
+body {
+	background-image: url(mountains.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	color: white;
+	margin: 20px;
+	font-family: 'Kelly Slab', cursive;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 70px;
+	color: #a4eaea;
+}
+h1:hover {
+	cursor: default;
+}
+.gameBoard{
+	background-color: rgba(0,0,0,0.8);
+	padding: 45px;
+	margin: 0 100px 20px 100px;
+	border-radius: 10px;
+
+/*	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 48%, #000000 49%, #000000 51%, #ffffff 52%, #ffffff 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%); 
+	background: linear-gradient(to bottom, #ffffff 0%,#ffffff 48%,#000000 49%,#000000 51%,#ffffff 52%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );*/
+}
+.cars {
+	float: left;
+	padding: 10px;
+	border-radius: 5px;
+}
+#car1 {
+	background-color: red;
+	position: absolute;
+	top: 290px;
+	left: 120px;
+}
+#car2 {
+	background-color: blue;
+	position: relative;
+	top: 145px;
+	left: 100px;
+}
+#finishLine {
+	position: relative;
+	right: 100px;
+	float: right;
+	padding: 100px 5px;
+	border-radius: 3px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+11,ffffff+12,ffffff+25,000000+26,000000+37,ffffff+38,ffffff+50,000000+51,111111+62,ffffff+63,ffffff+75,000000+76,000000+87,ffffff+88,ffffff+100 */
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top, #000000 0%, #000000 11%, #ffffff 12%, #ffffff 25%, #000000 26%, #000000 37%, #ffffff 38%, #ffffff 50%, #000000 51%, #111111 62%, #ffffff 63%, #ffffff 75%, #000000 76%, #000000 87%, #ffffff 88%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #000000 0%,#000000 11%,#ffffff 12%,#ffffff 25%,#000000 26%,#000000 37%,#ffffff 38%,#ffffff 50%,#000000 51%,#111111 62%,#ffffff 63%,#ffffff 75%,#000000 76%,#000000 87%,#ffffff 88%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.score {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 2px;
+	font-size: 20px;
+}
+.score:hover {
+	cursor: default;
+}
+.centeredSection {
+	/*margin: 50px;*/
+	padding: 10px 0;
+	text-align: center;
+}
+.clearedFloat:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.redPlayer {
+	color: maroon;
+}
+.bluePlayer {
+	color: navy;
+}
+.menuButtons {
+	padding: 20px;
+	background-color: white;
+	color: black;
+	display: inline-block;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.menuButtons:hover {
+	background-color: #7799ff;
+	color: white;
+	cursor: pointer;
+}
+.displayFeed {
+	width: 400px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	background-color: rgba(0,0,0,0.8);
+	display: inline-block;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.displayFeed:hover {
+	cursor: default;
+}
